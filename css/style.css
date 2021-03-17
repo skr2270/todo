@@ -36,7 +36,7 @@ form input, form button {
   background: white;
 }
 
-button {
+form button {
   color: #d88771;
   background: white;
   cursor: pointer;
@@ -44,8 +44,63 @@ button {
   transition: all 0.5s ease;
 }
 
-button :hover {
+form button :hover {
   background: #d88771;
   color: white;
+}
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-container .todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo-container .todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-container .todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.todo-container .todo .trash-btn, .todo-container .todo .complete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.todo-container .todo .complete-btn {
+  background: #49d149;
+}
+
+.todo-container .todo .todo-item {
+  padding: 0rem 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
