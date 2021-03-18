@@ -94,7 +94,7 @@ select{
     margin: 1rem;
     overflow: hidden;
 }
-.select::after{
+.select::after {
     content: "\25BC";
     position: absolute;
     background: #ff6f47;
@@ -102,4 +102,9 @@ select{
     right: 0;
     padding: 1rem;
     pointer-events: none;
+    transform: all 0.3s ease-in-out;
+}
+.select:hover::after {
+    background: white;
+    color: #ff6f47;
 }
